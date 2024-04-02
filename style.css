@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* #coffee{
+position: fixed;  
+  object-fit: cover; 
+  width: 100vw;      
+  height: 100vh;     
+  top: 0;            
+  left: 0;         
+  z-index: -1;      
+} */
+#coffee{
+    width: 100%;
+    opacity: 0.7;
+   
+}
+body{
+    overflow: hidden;
+}
+h2{
+font-family: 'Times New Roman', Times, serif;
+color:yellow;
+}
+.container{
+    background-color: transparent;
+    width:35%;
+   height:300px;
+    padding:12px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom:48rem;
+    
+    border:solid 1px black;
+    background-color: rgb(66, 7, 7);
+    opacity: 0.8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+button{
+    width:25%;
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 10rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+#user-name{
+    margin-bottom:2rem;
+}
+#user-name, #password, #confirm-password{
+    
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 1px white;
+}
+#spanToggle{
+    color:red;
+    font-weight: bolder;
+}
+.text{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 20px;
+    color:white;
+}
+#passwordHelpBlock{
+    font-size: 14px;
+    color:rgb(180, 176, 176);
+    font-style: italic;
+}
+input{
+    color:white;
+}
+#errorText{
+    color:red;
+    font-size:14px;
+}
+/* media queries - mobile devices*/
+ @media (min-width:320px) and (max-width: 481px) { 
+   
+    h2{
+        font-size: 10px;
+    }
+ .container{
+    
+    display: flex;
+    bottom:13rem;
+    height:150px;
+   
+ }
+    #user-name{
+        margin-bottom:0.5px;
+    }
+    #password{
+        margin-bottom:0.5px;
+    }
+#user-name, #password, #confirm-password{
+    font-size: 10px;
+}
+#passwordHelpBlock{
+    font-size: 4px;
+    
+}
+#errorText{
+    color:red;
+    font-size:4px;
+}
+.text{
+    font-size:6px;
+    margin-top: 1.2px;
+}
+button{
+    width:26%;
+    height:10px;
+    font-size: 5px;
+    display: block;
+    margin: 0 auto;
+}
+ }
+ /* iPads and Tablets */
+ @media (min-width:481px) and (max-width: 769px) { 
+    h2{
+        font-size: 10px;
+    }
+    .container{
+       
+        display:flex;
+        bottom:15rem;
+        height:170px;
+       
+     }
+    button{
+        height:10px;
+    font-size: 8px;
+    display: block;
+    margin: 0 auto;
+    
+    }
+   
+
+     #user-name{
+        margin-bottom:1rem;
+    }
+    
+#user-name, #password, #confirm-password{
+    font-size: 10px;
+    
+}
+#passwordHelpBlock{
+    font-size: 7px;
+    
+}
+#errorText{
+    color:red;
+    font-size:7px;
+}
+.text{
+    font-size:8px;
+    margin-top: 4px;
+}
+  } 
+  /*Small screens,laptop */
+  @media (min-width:769px) and (max-width: 920px) { 
+    .container{
+        
+        
+        display:flex;
+        bottom:25rem;
+        
+       
+     }
+     button{
+        height:14px;
+    font-size: 10px;
+    display: block;
+    margin: 0 auto;
+    
+    }
+    .text{
+        font-size: 16px;
+    }
+  } 
+  @media (min-width:921px) and (max-width:1544px) {
+    .container{
+        
+        
+        
+        display:flex;
+        bottom:35rem;
+        
+       
+     }
+     button{
+        height:14px;
+    font-size: 10px;
+    display: block;
+    margin: 0 auto;
+    
+    }
+  }
+  @media (min-width:1024){
+    .container{
+        
+         max-width:35rem;
+   height: 300px;
+    }
+  }
